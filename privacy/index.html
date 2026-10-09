@@ -18,7 +18,7 @@
 </header>
 <main>
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated <time datetime="2026-10-06">October 6, 2026</time></p>
+<p class="updated">Last updated <time datetime="2026-10-09">October 9, 2026</time></p>
 <nav class="toc" aria-label="On this page">
   <p class="toc-title">On this page</p>
   <ul>
@@ -45,8 +45,8 @@
   <p><strong>Account:</strong> your email address, password (never stored in plain text), first name, last name, username, and profile photo.</p>
   <p><strong>Personal details:</strong> date of birth, height, weight, and gender. These are used to estimate your BAC and to power your insights. They are not shown on your public profile, but some of them are shared with friends you accept — see &quot;What other people can see&quot; below.</p>
   <p><strong>Drink logs:</strong> the name, ingredients, volume, ABV, photo, and time of each drink you log, when you logged it, and how: from the Drink Database, from your saved drinks, with a photo scan or with a barcode. At the start of a night's drinking we also ask how full your stomach is, and store that answer against that night's drinks — how much you've eaten changes how alcohol is absorbed, so it's an input to your BAC estimate. Gulper does not ask for or record your location.</p>
-  <p><strong>Photos for Scan Drink:</strong> a photo you take to identify a drink is sent to Anthropic, our AI provider, to analyze it. This only happens when you actively use Scan Drink, and your photos are only analyzed to answer that request — they are never used to train AI models.</p>
-  <p><strong>Barcodes:</strong> when you scan a product barcode, that barcode number is sent to Open Food Facts, a public product database, to look up the product's name, size, and alcohol content.</p>
+  <p><strong>Photos for Scan Drink:</strong> when you photograph a drink to identify it, that photo is sent to Anthropic, our AI provider, to analyze it. This only happens when you actively use Scan Drink, and your photos are only analyzed to answer that request — they are never used to train AI models. A photo taken while scanning a barcode is not sent to Anthropic; it is only stored with the drink, as described under Barcodes below.</p>
+  <p><strong>Barcodes:</strong> when you scan a product barcode, that barcode number is sent to Open Food Facts, a public product database, to look up the product's name, size, and alcohol content. The photo your camera takes at that moment is stored with the drink so its entry shows a picture, like any other scan — it isn't sent to Open Food Facts, to Anthropic, or anywhere else. If no photo was taken, the drink shows the product photo Open Food Facts holds, loaded from their servers.</p>
   <p><strong>Usage counts:</strong> we record the time of each drink and barcode scan you run, so we can enforce the daily scan limit on the free plan and prevent abuse of the AI scanning feature. These records count scans; they don't store what you scanned.</p>
   <p><strong>Social features:</strong> friend connections, group memberships, the people you block, and any report you make about another user (who you reported, the reason you chose, and when). Gulper has no messaging of any kind.</p>
   <p><strong>Subscription:</strong> your current plan (free or Gulper+), your billing cycle, and your renewal date. If you upgrade to Gulper+, the payment is handled entirely by Apple and charged to your Apple Account — Gulper never sees or stores your card number. RevenueCat, our subscription service, receives your Gulper account identifier and the purchase details from Apple so we know which account to unlock.</p>
@@ -77,7 +77,8 @@
 </section>
 <section id="data-retention-and-deletion">
   <h2>Data retention and deletion</h2>
-  <p>Your data is kept for as long as your account exists. You can permanently delete your account at any time from Profile → Account Actions → Delete Account. This removes your photos from storage and permanently deletes your profile, personal details, drink history, saved drinks, friendships, group memberships, blocks, and reports. It does not cancel a Gulper+ subscription: Apple bills it, so cancel it yourself in Settings → Apple Account → Subscriptions.</p>
+  <p>Your data is kept for as long as your account exists, except for photos. A photo you take with Scan Drink is kept for three months, which is as far back as a calendar reaches, and is deleted once no drink you can still open is using it. Deleting the logged drink deletes its photo too. A photo of a drink in your saved drinks is kept for as long as that drink stays saved. When you save a new profile photo or group photo, the one it replaces is deleted.</p>
+  <p>You can permanently delete your account at any time from Profile → Account Actions → Delete Account. This removes your photos from storage and permanently deletes your profile, personal details, drink history, saved drinks, friendships, group memberships, blocks, and reports. It does not cancel a Gulper+ subscription: Apple bills it, so cancel it yourself in Settings → Apple Account → Subscriptions.</p>
   <p>If you allowed usage analytics, deleting your account also deletes it from PostHog.</p>
 </section>
 <section id="your-rights">
